@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62eed9d9fe6752c498309bb26371ad9b, type: 3}
+  m_Name: Explain Hanjou
+  m_EditorClassIdentifier: 
+  BgmIndex: 2
+  stories:
+  - Background: {fileID: 21300000, guid: b2a557ef29cb3cb4da202b7e19bb171c, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "\u4ECAStoryData\u304C\u98DB\u30F3\u3060\u3088\u306A\uFF1F"
+    CharacterName: "\u306F\u306B\u3087\u574A"
+    Choices: []
+  - Background: {fileID: 21300000, guid: b2a557ef29cb3cb4da202b7e19bb171c, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "\u4ECAStoryData\u304C\u30C8\u30F3\u3060\u3088\u306A\uFF1F"
+    CharacterName: "\u306F\u306B\u3087\u574A"
+    Choices: []
+  - Background: {fileID: 21300000, guid: b2a557ef29cb3cb4da202b7e19bb171c, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "Next Story Index:3,Next Text Index:0\u3092\u5272\u308A\u5F53\u3066\u305F\u304B\u3089\u3001\u3053\u306EStoryData\u304C\u6700\u521D\u306E\u90E8\u5206\u304B\u3089\u8AAD\u307F\u8FBC\u307E\u308C\u305F"
+    CharacterName: "\u306F\u306B\u3087\u574A"
+    Choices: []
+  - Background: {fileID: 21300000, guid: b2a557ef29cb3cb4da202b7e19bb171c, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "\u5473\u6C17\u306A\u3044\u756A\u53F7\u9078\u629E\u3060\u304B\u3089\u51E1\u30DF\u30B9\u3057\u306A\u3044\u3088\u3046\u306B\u6C17\u3092\u3064\u3051\u3088\u3046"
+    CharacterName: "\u6570\u5B57\u3092\u8003\u3048\u3066\u306D\u305A\u307F\u8B1B\u3057\u3066\u305F\u7537"
+    Choices: []

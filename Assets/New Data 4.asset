@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62eed9d9fe6752c498309bb26371ad9b, type: 3}
+  m_Name: New Data 4
+  m_EditorClassIdentifier: 
+  BgmIndex: 4
+  stories:
+  - Background: {fileID: 0}
+    CharacterImage: {fileID: 0}
+    SFX: {fileID: 0}
+    StoryText: "\u304A\u3081\u3067\u3068\u3046\uFF01\u304A\u3081\u3067\u3068\u3046\uFF01\u304A\u3081\u3067\u3068\u3046\uFF01\u304A\u3081\u3067\u3068\u3046\uFF01"
+    CharacterName: "ps. \u30CD\u30BF\u30C4\u30A4\u3088\u308A\u30D5\u30A1\u30DF\u901A\u753A\u5185\u4F1A\u306E\u65B9\u304C\u9762\u767D\u3044\u3088"
+    Choices: []
+  - Background: {fileID: 0}
+    CharacterImage: {fileID: 0}
+    SFX: {fileID: 0}
+    StoryText: "BGM\u304C\u5909\u308F\u3063\u3066\u3044\u308B\u306E\u306B\u3082\u7406\u7531\u304C\u3042\u3063\u3066"
+    CharacterName: "ps. \u30CD\u30BF\u30C4\u30A4\u3088\u308A\u30D5\u30A1\u30DF\u901A\u753A\u5185\u4F1A\u306E\u65B9\u304C\u9762\u767D\u3044\u3088"
+    Choices: []
+  - Background: {fileID: 0}
+    CharacterImage: {fileID: 0}
+    SFX: {fileID: 0}
+    StoryText: "\u5404New Data\u306E\u4E0A\u306E\u65B9\u306B\u3042\u308BBgm Index\u3063\u3066\u3044\u3046\u756A\u53F7\u3092\u898B\u3066\u4E0B\u3055\u3044"
+    CharacterName: "ps. \u30CD\u30BF\u30C4\u30A4\u3088\u308A\u30D5\u30A1\u30DF\u901A\u753A\u5185\u4F1A\u306E\u65B9\u304C\u9762\u767D\u3044\u3088"
+    Choices: []
+  - Background: {fileID: 0}
+    CharacterImage: {fileID: 0}
+    SFX: {fileID: 0}
+    StoryText: "BGM\u306A\u3057\u306A\u3089-1,\u3064\u3051\u308B\u306A\u3089SoundManager\u306B\u3042\u308Bbgmclips\u914D\u5217\u306B\u76F4\u63A5\u97F3\u58F0\u30D5\u30A1\u30A4\u30EB\u3092\u30C9\u30E9\u30C3\u30B0\uFF06\u30C9\u30ED\u30C3\u30D7\u3059\u308C\u3070\u305D\u306EBGM\u304C\u6D41\u305B\u307E\u3059"
+    CharacterName: "ps. \u30CD\u30BF\u30C4\u30A4\u3088\u308A\u30D5\u30A1\u30DF\u901A\u753A\u5185\u4F1A\u306E\u65B9\u304C\u9762\u767D\u3044\u3088"
+    Choices:
+    - Text: Be Cramer
+      NextStoryIndex: 5
+      NextTextIndex: 0

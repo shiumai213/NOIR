@@ -8,10 +8,11 @@ public class StoryManager : MonoBehaviour
 {
     [SerializeField] public StoryData[] storyDatas; // ストーリーデータの配列
 
+    [SerializeField] private StoryData storydata;
     [SerializeField] private Image background; // 背景画像
     [SerializeField] private Image characterImage; // キャラクター画像
     //[SerializeField] private Image characterImage2; //キャラ画像2
-    [SerializeField] private AudioClip SoundEffect; //効果音
+    //[SerializeField] private AudioClip SoundEffect; //効果音
     [SerializeField] private TextMeshProUGUI storyText; // ストーリーテキスト
     [SerializeField] private TextMeshProUGUI characterName; // キャラクター名
     [SerializeField] private SoundManager soundManager; //bgm
@@ -95,13 +96,20 @@ public class StoryManager : MonoBehaviour
     
     private void SetStoryElement(int _storyIndex, int _textIndex)
         {
-            soundManager.PlayBGM(storyDatas[_storyIndex].bgm);
             var storyElement = storyDatas[_storyIndex].stories[_textIndex];
+            // ★ 章の先頭行に来たタイミングでだけ BGM を切り替える
+            if (_textIndex == 0 && soundManager != null && storyDatas != null && _storyIndex < storyDatas.Length)
+            {
+                var data = storyDatas[_storyIndex];
+                soundManager.PlayBGMByIndex(data.BgmIndex);
+            }
 
             background.sprite = storyElement.Background;
             characterImage.sprite = storyElement.CharacterImage;
             characterName.text = storyElement.CharacterName;
-            
+
+            // 効果音を止める処理（テキスト更新ごとに毎回行う）
+            soundManager.StopSE();
             // 効果音が設定されていれば再生
             if (storyElement.SFX != null)
             {

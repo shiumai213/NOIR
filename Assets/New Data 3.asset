@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62eed9d9fe6752c498309bb26371ad9b, type: 3}
+  m_Name: New Data 3
+  m_EditorClassIdentifier: 
+  BgmIndex: 3
+  stories:
+  - Background: {fileID: 0}
+    CharacterImage: {fileID: 0}
+    SFX: {fileID: 0}
+    StoryText: "New Data 3 \u306E0\u756A\u76EE\u306E\u30C6\u30AD\u30B9\u30C8\u3067\u3059"
+    CharacterName: 
+    Choices: []
+  - Background: {fileID: 0}
+    CharacterImage: {fileID: 0}
+    SFX: {fileID: 0}
+    StoryText: textIndex 1
+    CharacterName: 
+    Choices: []

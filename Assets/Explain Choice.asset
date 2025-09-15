@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62eed9d9fe6752c498309bb26371ad9b, type: 3}
+  m_Name: Explain Choice
+  m_EditorClassIdentifier: 
+  BgmIndex: 1
+  stories:
+  - Background: {fileID: 21300000, guid: 2a6660b060659d2479b8e465a68053e9, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "\u9078\u629E\u80A2\u6A5F\u80FD\u306E\u4ED5\u69D8\u30FB\u6CE8\u610F\u70B9"
+    CharacterName: "\u4FFA\u306F\u306F\u3093\u3058\u3087\u3046\u3060"
+    Choices: []
+  - Background: {fileID: 21300000, guid: 2a6660b060659d2479b8e465a68053e9, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "\u9078\u629E\u80A2\u3092\u4F7F\u3046\u3068\u540C\u3058StoryData\u306E\u5225\u306E\u8981\u7D20\u3084\u4ED6\u306EStoryData\u306B\u3001\n\u30C8\u30D9\u307E\u3059"
+    CharacterName: "\u4FFA\u306F\u201D\u6016\u3044\u201D\u3093\u3060\u305E"
+    Choices: []
+  - Background: {fileID: 21300000, guid: 2a6660b060659d2479b8e465a68053e9, type: 3}
+    CharacterImage: {fileID: 21300000, guid: c46394d250edae248bd5b28de6c43332, type: 3}
+    SFX: {fileID: 0}
+    StoryText: "\u8A66\u3057\u306B\u30C8\u30F3\u3067\u307F\u3088\u3046"
+    CharacterName: "\u30A2\u30B3\u30FC\u30C7\u30A3\u30AA\u30F3\u306E\u4EF6\u306F\u8B1D\u7F6A\u3057\u306A\u3044"
+    Choices:
+    - Text: Fly
+      NextStoryIndex: 3
+      NextTextIndex: 0

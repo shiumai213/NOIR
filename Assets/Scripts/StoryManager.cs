@@ -21,6 +21,9 @@ public class StoryManager : MonoBehaviour
     [Header("Choices UI (optional)")]
     [SerializeField] private RectTransform choicesContainer; // 未指定ならランタイムで生成
     [SerializeField] private Sprite choiceButtonSprite; // 任意（未指定でも可）
+    [SerializeField] private TMP_FontAsset choiceFont;
+    [SerializeField] private float choiceFontSize = 28f;
+
     
     // DispMenuManagerへの参照
     private DispMenuManager dispMenuManager;
@@ -224,7 +227,11 @@ public class StoryManager : MonoBehaviour
             labelRect.offsetMax = new Vector2(-16f, -8f);
             var label = labelGO.GetComponent<TextMeshProUGUI>();
             label.text = string.IsNullOrEmpty(opt.Text) ? "選択肢" : opt.Text;
-            label.fontSize = 28f;
+
+            // ★ フォントアセットを指定（Inspectorから割り当てる用に[SerializeField]にすると便利）
+            if (choiceFont != null) label.font = choiceFont;
+            
+            label.fontSize = choiceFontSize;
             label.color = Color.white;
             label.enableWordWrapping = true;
             label.alignment = TextAlignmentOptions.MidlineLeft;

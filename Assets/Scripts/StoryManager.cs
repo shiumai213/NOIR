@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class StoryManager : MonoBehaviour
@@ -140,11 +141,29 @@ public class StoryManager : MonoBehaviour
         }
     }
 
+    private bool IsMaxStoryIndex()
+    {
+        if (storyDatas != null && storyDatas.Length > 0)
+        {
+            int maxIndex = storyDatas.Length - 1;
+            return storyIndex >= maxIndex;
+        }
+
+        return true;
+    }
+
     private void ChangeStoryElement()
     {
-        textIndex = 0;
-        storyIndex++;
-        SetStoryElement(storyIndex, textIndex);
+        if (!IsMaxStoryIndex())
+        {
+            textIndex = 0;
+            storyIndex++;
+            SetStoryElement(storyIndex, textIndex);
+        }
+        else
+        {
+            GetTitleScene();
+        }
     }
 
     private IEnumerator TypeSentence(int _storyIndex, int _textIndex)
@@ -158,6 +177,11 @@ public class StoryManager : MonoBehaviour
         }
 
         finishText = true;
+    }
+
+    private void GetTitleScene()
+    {
+        SceneManager.LoadScene("TitleScene");
     }
 
     // ===== 分岐処理 =====
